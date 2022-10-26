@@ -1,14 +1,49 @@
-.side-bar {
-  display : flex;
-  flex-direction : column;
-  background-color : rgb(53, 64, 82);
-  color: rgb();
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 8pt;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(53, 64, 82);
+  color: rgb(200, 200, 200);
+  position: fixed;
+  height: 100%;
+  width: 0;
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+
+.profile-container {
+  align-self: center;
 }
 
 .profile-picture {
   height: 12vh;
-  width : auto;
-  border-radius : 50%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.name {
+  text-align: center;
+}
+
+.nav-section {
+  margin-left: 5%;
+  margin-top: 0;
+  border-bottom: solid #111;
+}
+
+.main-heading {
+  margin-top: 0;
 }
 
 .icons {
@@ -17,6 +52,164 @@
 }
 
 .icon-image {
-  height : 3vh;
-  width : auto;
+  height: 3vh;
+  width: auto;
+  align-self: center;
+  margin: 1%;
+  margin-right: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav input[type="text"] {
+  float: right;
+  padding: 6px;
+  padding-left: 40px;
+  font-size: 17px;
+  width: 60vw;
+  height: 4.35vh;
+  border: solid rgb(200, 200, 200);
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(200, 200, 200);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  padding: 10px 15px;
+  border: solid rgb(200, 200, 200);
+}
+
+.openbtn:hover {
+  background-color: rgb(25, 164, 251);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-button {
+  height: 6.35vh;
+  width: 4vw;
+  background-size: 3vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: solid rgb(200, 200, 200);
+}
+
+.nav-button:hover {
+  background-color: rgb(25, 164, 251);
+  cursor: pointer;
+}
+
+#add-friend {
+  background-image: url(./assets/add-friend.png);
+}
+
+#add-event {
+  background-image: url(./assets/add-calendar-symbol-for-events.png);
+}
+
+#see-all {
+  background-image: url(./assets/grid.png);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  font-size: 10pt;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+#admin input:checked ~ .checkmark {
+  background-color: #ffe228;
+}
+
+#design input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+#executive input:checked ~ .checkmark {
+  background-color: rgb(224, 37, 37);
+}
+
+#human-resources input:checked ~ .checkmark {
+  background-color: rgb(0, 144, 96);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

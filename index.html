@@ -1,86 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Dani Static Comp</title>
-</head>
-<body>
-  <nav class="side-bar">
-    <div>
-      <img class="profile-picture" src="./assets/profile.png" alt="profile picture">
-      <p> Dani Bagley </p>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="profile-container">
+        <img
+          class="profile-picture"
+          src="./assets/profile.png"
+          alt="profile picture"
+        />
+        <p class="name">Dani Bagley</p>
+      </div>
+      <section class="nav-section">
+        <h3 class="main-heading">Main</h3>
+        <div class="icons">
+          <img class="icon-image" src="./assets/home.png" alt="home icon" />
+          <p>HOME</p>
+        </div>
+        <div class="icons">
+          <img class="icon-image" src="./assets/suitcase.png" alt="jobs icon" />
+          <p>JOBS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/resume.png"
+            alt="resumes icon"
+          />
+          <p>RESUMES</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/to-do-list.png"
+            alt="tasks icon"
+          />
+          <p>TASKS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/calendar.png"
+            alt="calendar icon"
+          />
+          <p>CALENDAR</p>
+        </div>
+      </section>
+      <section class="nav-section">
+        <h3>Admin</h3>
+        <div class="icons">
+          <img class="icon-image" src="./assets/group.png" alt="users icon" />
+          <p>USERS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/location.png"
+            alt="locations icon"
+          />
+          <p>LOCATIONS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/workflow.png"
+            alt="workflow icon"
+          />
+          <p>WORKFLOWS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/card.png"
+            alt="job boards icon"
+          />
+          <p>JOB BOARDS</p>
+        </div>
+        <div class="icons">
+          <img
+            class="icon-image"
+            src="./assets/network.png"
+            alt="social icon"
+          />
+          <p>SOCIAL</p>
+        </div>
+      </section>
+      <section class="nav-section">
+        <h3>Categories</h3>
+        <label class="container" id="admin">Administration
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container" id="design">Design
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container" id="executive">Executive
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container" id="human-resources">Human Resources
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        
+        </body>
+        </html>
+      </section>
     </div>
-    <section class ="nav-section">
-      <h3>Main</h3>
-      <div class="icons">
-        <img class="icon-image" src="./assets/home.png" alt="home icon"/>
-        <p>HOME</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/suitcase.png" alt="jobs icon"/>
-        <p>JOBS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/resume.png" alt="resumes icon"/>
-        <p>RESUMES</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/to-do-list.png" alt="tasks icon"/>
-        <p>TASKS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/calendar.png" alt="calendar icon"/>
-        <p>CALENDAR</p>
-      </div>
-    </section>
-    <section class ="nav-section">
-      <h3>Admin</h3>
-      <div class="icons">
-        <img class="icon-image" src="./assets/group.png" alt="users icon"/>
-        <p>USERS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/location.png" alt="locations icon"/>
-        <p>LOCATIONS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/workflow.png" alt="workflow icon"/>
-        <p>WORKFLOWS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/card.png" alt="job boards icon"/>
-        <p>JOB BOARDS</p>
-      </div>
-      <div class="icons">
-        <img class="icon-image" src="./assets/network.png" alt="social icon"/>
-        <p>SOCIAL</p>
-      </div>
-    </section>
-    <section class ="nav-section">
-      <h3>Categories</h3>
-      <div class="icons">
-        <input type="checkbox" id="administrative">
-        <label for="administration"> Administrative </label><br>
-      </div>
-      <div class="icons">
-        <input type="checkbox" id="design">
-        <label for="design"> Design </label><br>
-      </div>
-      <div class="icons">
-        <input type="checkbox" id="executive">
-        <label for="executive"> Executive </label><br>
-      </div>
-      <div class="icons"> 
-        <input type="checkbox" id="human-resources">
-        <label for="human-resources"> Human Resources </label><br>
-      </div>
-    </section>
-  </nav>
-  <main>
-    <!-- big section goes here-->
-  </main>
-</body>
+    <!-- MAIN STARTS -->
+    <main id="main">
+      <section class="nav-bar">
+        <div class="topnav">
+          <button class="openbtn topnav" onclick="openNav()">&#9776;</button>
+          <input type="text" placeholder="Search for a job, task, or resume" />
+        </div>
+        <button class="nav-button" id="add-friend"></button>
+        <button class="nav-button" id="add-event"></button>
+        <button class="nav-button" id="see-all"></button>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="scripts.js"></script>
 </html>
