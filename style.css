@@ -213,3 +213,41 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 25pt;
+  margin-bottom: 0;
+}
+
+.location {
+  margin-top: 15px;
+  font-size: 12pt;
+  margin-bottom: auto;
+}
+
+#icon-image-location {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.second-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.second-nav-bar-button {
+  background: none;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.second-nav-bar-button:hover {
+  cursor: pointer;
+  border-bottom: solid 3px #2196f3;
+}
