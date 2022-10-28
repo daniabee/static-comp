@@ -40,6 +40,7 @@ body {
   margin-left: 10%;
   margin-top: 0;
   border-bottom: solid #111;
+  margin-right: 10%;
 }
 
 .main-heading {
@@ -265,7 +266,7 @@ body {
 }
 
 .circle-chart {
-  margin: 1%;
+  margin-right: 100px;
 }
 
 .circle-chart__circle {
@@ -301,36 +302,36 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
-  margin-right: 10px;
+  margin-top: 5%;
+  margin-right: 1%;
+  margin-bottom: 5%;
 }
 
 .graphs {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .bar-graph {
-  height: 180px;
+  height: 25vh;
   width: auto;
-  margin: 30px;
-  margin-top: 90px;
+  margin-top: 20%;
 }
 
 .labels-for-graphs {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: rgb(239, 239, 239);
-  padding-bottom: 50px;
+  padding-bottom: 5%;
   border-bottom: solid 1px rgb(53, 64, 82);
 }
 
 .label-div {
   background-color: white;
   border: solid 2px #111;
-  width: 200px;
+  width: 10vw;
   text-align: center;
   border-radius: 20px;
 }
@@ -341,66 +342,67 @@ body {
 }
 
 .job-form {
-  margin: 50px;
+  margin: 5%;
   margin-top: 0;
-  padding: 10px;
-  padding-top: 50px;
-  width: 700px;
+  padding: 1%;
+  padding-top: 5%;
+  width: 30vw;
 }
 
 .form-div {
   display: flex;
   flex-direction: row;
   border-bottom: solid 1px rgb(53, 64, 82);
-  padding: 10px;
+  padding: 1%;
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
 }
 
 .form-div-heading {
   background-color: rgb(129, 129, 129);
-  padding: 10px;
+  padding: 1%;
   color: rgb(239, 239, 239);
   border-radius: 3px;
   border-bottom: none;
 }
 
 .form-heading {
-  width: 100px;
+  width: 10vw;
 }
 
 .form-description {
-  width: 300px;
+  width: 15vw;
   height: auto;
-  margin-left: 50px;
+  margin-left: 5%;
   text-align: left;
 }
 
 .buttons-section {
-  padding-right: 560px;
+  padding-right: 20%;
+  padding-left: 10%;
   display: flex;
   flex-direction: column;
-  width: 520px;
-  height: 800px;
+  width: 52vw;
+  height: auto;
   background-color: rgb(239, 239, 239);
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 30px;
+  padding-top: 1.5%;
 }
 
 .bottom-half-main {
   display: flex;
   flex-direction: row;
-  width: ;
+  width: auto;
 }
 
 .social-media-button {
-  width: 200px;
-  height: 50px;
+  width: 10vw;
+  height: 5vh;
 }
 
 .link-trees-social {
-  width: 200px;
+  width: 10vw;
 }
 
 #facebook {
@@ -422,4 +424,9 @@ body {
   border: none;
   border-radius: 3px;
   color: rgb(255, 255, 255);
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
 }
