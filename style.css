@@ -99,6 +99,7 @@ body {
   background-color: whitesmoke;
   padding: 10px 15px;
   border: solid rgb(200, 200, 200);
+  height: 6vh;
 }
 
 .openbtn:hover {
@@ -111,7 +112,7 @@ body {
 }
 
 .nav-button {
-  height: 6.35vh;
+  height: 6vh;
   width: 4vw;
   background-size: 3vh;
   background-repeat: no-repeat;
